@@ -1,3 +1,5 @@
+// API:Vantage: 6L4IRMM533FN6S2N
+
 #include <algorithm>
 #include <vector>
 #include <stdexcept>

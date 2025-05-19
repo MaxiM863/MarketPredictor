@@ -3,6 +3,9 @@
 
 #include "hmm.hpp"
 
+#define CPPHTTPLIB_OPENSSL_SUPPORT
+#include "httplib.h"
+
 void showUsage(std::string programName)
 {
     std::cerr << "Usage: " << programName
@@ -25,9 +28,30 @@ void printPredictionEstimation(size_t stateInd,
 int main(int argc, char* argv[])
 {
     // section: check arguments and prepare input streams
-    if (argc < 3) {
+    if (false) {
         showUsage(argv[0]);
         return -1;
+    }
+
+    if(true)
+    {
+
+        #ifdef CPPHTTPLIB_OPENSSL_SUPPORT
+
+        httplib::SSLClient cli("https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=IBM&interval=5min&apikey=demo");
+        
+        #endif
+
+        //httplib::Client cli();
+        auto res = cli.Get("/");
+        if (res && res->status == 200) {
+
+            std::cerr << res->body << std::endl;
+        }
+
+        
+
+        return 0;
     }
 
     std::ifstream modelSource(argv[1]);
