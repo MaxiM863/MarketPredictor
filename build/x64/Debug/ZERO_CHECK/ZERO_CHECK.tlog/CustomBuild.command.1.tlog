@@ -1,0 +1,10 @@
+^G:\MY DRIVE\PROGRAMATION\MARKETPREDICTOR\MARKETPREDICTOR\BUILD\CMAKEFILES\6EA4D91B358B25E61B44A966F654FF23\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SG:/My Drive/programation/MarketPredictor/MarketPredictor" "-BG:/My Drive/programation/MarketPredictor/MarketPredictor/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "G:/My Drive/programation/MarketPredictor/MarketPredictor/build/Market.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

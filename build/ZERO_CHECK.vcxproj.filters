@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="G:\My Drive\programation\MarketPredictor\MarketPredictor\build\CMakeFiles\6ea4d91b358b25e61b44a966f654ff23\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{3AD2818D-8938-39DF-A460-3933ACB015B1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
